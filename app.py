@@ -1,9 +1,6 @@
 from usellm import Message, Options, UseLLM
 import json
-import streamlit as st
-from PIL import Image
-import urllib.request
-from flask import Flask, url_for, render_template, request
+from flask import Flask, render_template, request
 
 # Initialize the service
 service = UseLLM(service_url="https://usellm.org/api/llm")
