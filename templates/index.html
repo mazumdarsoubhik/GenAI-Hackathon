@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <input type="text" name="output" placeholder="Enter output">
+        <button type="submit">Submit</button>
+    </form>
+    <img src="{{ url }}" alt="Image">
+    <h1>{{ headline }}</h1>
+    <p>{{ summary }}</p>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GenAI News Article Summarizer for GenZ </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      text-align: center;
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    .prompt {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .prompt textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      resize: vertical;
+    }
+
+    .prompt button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #30bd06;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .text-viewer {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .additional-text {
+      margin-top: 20px;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Article Shorts for GenZ</h1>
+
+    <form action="/" method="POST">
+      <div class="prompt">
+        <textarea id="prompt-input" name="output" placeholder="Enter your link to article"></textarea>
+        <button id="generate-button">Generate</button>
+      </div>
+  </form>
+    <!-- <div class="prompt">
+      <textarea id="prompt-input" name="output" placeholder="Enter your link to article"></textarea>
+      <button id="generate-button">Generate</button>
+    </div> -->
+
+    <div class="image-container" id="image-container">
+      <img src={{url}}>
+    </div>
+
+    <h2>{{ headline }}</h2>
+
+    <div class="text-viewer" id="text-viewer">{{ summary }}</summary></div>
+
+  </div>
+</body>
+</html>
